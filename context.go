@@ -123,6 +123,7 @@ func (dc *Context) GetCurrentPoint() (Point, bool) {
 }
 
 // GetFontEndPoint returns the point where the drawn font string ends.
+// only works for (dc *Context) DrawString
 func (dc *Context) GetFontEndPoint() Point {
 	return dc.drawfontend
 }
