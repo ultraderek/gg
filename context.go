@@ -745,8 +745,14 @@ func (dc *Context) drawString(im *image.RGBA, s string, x, y float64) (ex, ey fl
 		d.Dot.X += advance
 		prevC = c
 	}
+	var tempx int
+	if d.Dot.X%64 != 0 {
+		tempx = int(d.Dot.X/64) + 1
+	} else {
+		tempx = int(d.Dot.X / 64)
+	}
 
-	return float64(d.Dot.X), y
+	return float64(tempx), y
 }
 
 // DrawString draws the specified text at the specified point.
