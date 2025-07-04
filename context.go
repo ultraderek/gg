@@ -66,6 +66,7 @@ type Context struct {
 	fillPath      raster.Path
 	start         Point
 	current       Point
+	drawfontend   Point
 	hasCurrent    bool
 	dashes        []float64
 	dashOffset    float64
@@ -119,6 +120,11 @@ func (dc *Context) GetCurrentPoint() (Point, bool) {
 		return dc.current, true
 	}
 	return Point{}, false
+}
+
+// GetFontEndPoint returns the point where the drawn font string ends.
+func (dc *Context) GetFontEndPoint() Point {
+	return dc.drawfontend
 }
 
 // Image returns the image that has been drawn by this context.
@@ -707,7 +713,7 @@ func (dc *Context) FontHeight() float64 {
 	return dc.fontHeight
 }
 
-func (dc *Context) drawString(im *image.RGBA, s string, x, y float64) (fontendx, fontendy float64) {
+func (dc *Context) drawString(im *image.RGBA, s string, x, y float64) (ex, ey float64) {
 	d := &font.Drawer{
 		Dst:  im,
 		Src:  image.NewUniform(dc.color),
@@ -744,31 +750,31 @@ func (dc *Context) drawString(im *image.RGBA, s string, x, y float64) (fontendx,
 }
 
 // DrawString draws the specified text at the specified point.
-func (dc *Context) DrawString(s string, x, y float64) (fontendx, fontendy float64) {
-	return dc.DrawStringAnchored(s, x, y, 0, 0)
+func (dc *Context) DrawString(s string, x, y float64) {
+	dc.DrawStringAnchored(s, x, y, 0, 0)
 }
 
 // DrawStringAnchored draws the specified text at the specified anchor point.
 // The anchor point is x - w * ax, y - h * ay, where w, h is the size of the
 // text. Use ax=0.5, ay=0.5 to center the text at the specified point.
-func (dc *Context) DrawStringAnchored(s string, x, y, ax, ay float64) (fontendx, frontendy float64) {
+func (dc *Context) DrawStringAnchored(s string, x, y, ax, ay float64) {
 	w, h := dc.MeasureString(s)
 	x -= ax * w
 	y += ay * h
 	if dc.mask == nil {
-		x, y = dc.drawString(dc.im, s, x, y)
+		dc.drawfontend.X, dc.drawfontend.Y = dc.drawString(dc.im, s, x, y)
 	} else {
 		im := image.NewRGBA(image.Rect(0, 0, dc.width, dc.height))
-		x, y = dc.drawString(im, s, x, y)
+		dc.drawfontend.X, dc.drawfontend.Y = dc.drawString(im, s, x, y)
 		draw.DrawMask(dc.im, dc.im.Bounds(), im, image.ZP, dc.mask, image.ZP, draw.Over)
 	}
-	return x, y
+
 }
 
 // DrawStringWrapped word-wraps the specified string to the given max width
 // and then draws it at the specified anchor point using the given line
 // spacing and text alignment.
-func (dc *Context) DrawStringWrapped(s string, x, y, ax, ay, width, lineSpacing float64, align Align) (fontendx, frontendy float64) {
+func (dc *Context) DrawStringWrapped(s string, x, y, ax, ay, width, lineSpacing float64, align Align) {
 	lines := dc.WordWrap(s, width)
 
 	// sync h formula with MeasureMultilineString
@@ -788,13 +794,10 @@ func (dc *Context) DrawStringWrapped(s string, x, y, ax, ay, width, lineSpacing 
 		x += width
 	}
 	ay = 1
-	var tx, ty float64
 	for _, line := range lines {
-		tx, ty = dc.DrawStringAnchored(line, x, y, ax, ay)
+		dc.DrawStringAnchored(line, x, y, ax, ay)
 		y += dc.fontHeight * lineSpacing
 	}
-
-	return tx, ty
 
 }
 
