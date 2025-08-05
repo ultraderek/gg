@@ -1,8 +1,9 @@
 package main
 
+/*
 import "github.com/ultraderek/gg"
 
-func main() {
+func Unicode(filename string) {
 	const S = 4096 * 2
 	const T = 16 * 2
 	const F = 28
@@ -21,5 +22,6 @@ func main() {
 			dc.DrawStringAnchored(string(rune(i)), x, y, 0.5, 0.5)
 		}
 	}
-	dc.SavePNG("out.png")
+	dc.SavePNG(filename)
 }
+*/

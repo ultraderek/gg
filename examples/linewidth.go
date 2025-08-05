@@ -1,8 +1,9 @@
 package main
 
+/*
 import "github.com/ultraderek/gg"
 
-func main() {
+func linewidth(filename string) {
 	dc := gg.NewContext(1000, 1000)
 	dc.SetRGB(1, 1, 1)
 	dc.Clear()
@@ -15,5 +16,6 @@ func main() {
 		dc.Stroke()
 		w += 0.1
 	}
-	dc.SavePNG("out.png")
+	dc.SavePNG(filename)
 }
+*/

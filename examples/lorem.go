@@ -1,5 +1,6 @@
 package main
 
+/*
 import "github.com/ultraderek/gg"
 
 var lines = []string{
@@ -11,7 +12,7 @@ var lines = []string{
 	"non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 }
 
-func main() {
+func lorem(filename string) {
 	const W = 800
 	const H = 400
 	dc := gg.NewContext(W, H)
@@ -24,5 +25,6 @@ func main() {
 		y := H/2 - h*len(lines)/2 + i*h
 		dc.DrawStringAnchored(line, 400, float64(y), 0.5, 0.5)
 	}
-	dc.SavePNG("out.png")
+	dc.SavePNG(filename)
 }
+*/

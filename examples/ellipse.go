@@ -1,8 +1,9 @@
 package main
 
+/*
 import "github.com/ultraderek/gg"
 
-func main() {
+func ellipse(filename string) {
 	const S = 1024
 	dc := gg.NewContext(S, S)
 	dc.SetRGBA(0, 0, 0, 0.1)
@@ -16,5 +17,6 @@ func main() {
 	if im, err := gg.LoadImage("examples/gopher.png"); err == nil {
 		dc.DrawImageAnchored(im, S/2, S/2, 0.5, 0.5)
 	}
-	dc.SavePNG("out.png")
+	dc.SavePNG(filename)
 }
+*/

@@ -1,12 +1,13 @@
 package main
 
+/*
 import (
 	"image/color"
 
 	"github.com/ultraderek/gg"
 )
 
-func main() {
+func gradientlinear(filename string) {
 	dc := gg.NewContext(500, 400)
 
 	grad := gg.NewLinearGradient(20, 320, 400, 20)
@@ -35,5 +36,7 @@ func main() {
 	dc.ClosePath()
 	dc.Fill()
 
-	dc.SavePNG("out.png")
+	dc.SavePNG(filename)
 }
+
+*/

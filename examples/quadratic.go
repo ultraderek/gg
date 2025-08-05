@@ -1,8 +1,9 @@
 package main
 
+/*
 import "github.com/ultraderek/gg"
 
-func main() {
+func quadratic(filename string) {
 	const S = 1000
 	dc := gg.NewContext(S, S)
 	dc.SetRGB(1, 1, 1)
@@ -50,5 +51,6 @@ func main() {
 	dc.DrawStringAnchored("g", -5, 5, 0.5, 0.5)
 	dc.DrawStringAnchored("G", 5, -5, 0.5, 0.5)
 
-	dc.SavePNG("out.png")
+	dc.SavePNG(filename)
 }
+*/

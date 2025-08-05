@@ -1,8 +1,9 @@
 package main
 
+/*
 import "github.com/ultraderek/gg"
 
-func main() {
+func patternfill(filename string) {
 	im, err := gg.LoadPNG("examples/baboon.png")
 	if err != nil {
 		panic(err)
@@ -16,5 +17,6 @@ func main() {
 	dc.ClosePath()
 	dc.SetFillStyle(pattern)
 	dc.Fill()
-	dc.SavePNG("out.png")
+	dc.SavePNG(filename)
 }
+*/

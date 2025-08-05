@@ -1,8 +1,9 @@
 package main
 
+/*
 import "github.com/ultraderek/gg"
 
-func main() {
+func meme(filename string) {
 	const S = 1024
 	dc := gg.NewContext(S, S)
 	dc.SetRGB(1, 1, 1)
@@ -26,5 +27,6 @@ func main() {
 	}
 	dc.SetRGB(1, 1, 1)
 	dc.DrawStringAnchored(s, S/2, S/2, 0.5, 0.5)
-	dc.SavePNG("out.png")
+	dc.SavePNG(filename)
 }
+*/

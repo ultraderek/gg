@@ -1,12 +1,13 @@
 package main
 
+/*
 import (
 	"math"
 
 	"github.com/ultraderek/gg"
 )
 
-func main() {
+func sine(filename string) {
 	const W = 1200
 	const H = 60
 	dc := gg.NewContext(W, H)
@@ -25,5 +26,6 @@ func main() {
 	dc.SetHexColor("#19344180")
 	dc.SetLineWidth(8)
 	dc.Stroke()
-	dc.SavePNG("out.png")
+	dc.SavePNG(filename)
 }
+*/

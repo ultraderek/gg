@@ -1,5 +1,6 @@
 package main
 
+/*
 import (
 	"log"
 
@@ -8,7 +9,7 @@ import (
 	"golang.org/x/image/font/gofont/goregular"
 )
 
-func main() {
+func gofont(filename string) {
 	font, err := truetype.Parse(goregular.TTF)
 	if err != nil {
 		log.Fatal(err)
@@ -22,5 +23,6 @@ func main() {
 	dc.Clear()
 	dc.SetRGB(0, 0, 0)
 	dc.DrawStringAnchored("Hello, world!", 512, 512, 0.5, 0.5)
-	dc.SavePNG("out.png")
+	dc.SavePNG(filename)
 }
+*/

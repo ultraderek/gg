@@ -1,12 +1,13 @@
 package main
 
+/*
 import (
 	"math"
 
 	"github.com/ultraderek/gg"
 )
 
-func main() {
+func concat(filename string) {
 	im1, err := gg.LoadPNG("examples/baboon.png")
 	if err != nil {
 		panic(err)
@@ -26,5 +27,6 @@ func main() {
 	dc := gg.NewContext(width, height)
 	dc.DrawImage(im1, 0, 0)
 	dc.DrawImage(im2, 0, s1.Y)
-	dc.SavePNG("out.png")
+	dc.SavePNG(filename)
 }
+*/

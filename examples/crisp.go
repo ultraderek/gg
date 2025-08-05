@@ -1,10 +1,11 @@
 package main
 
+/*
 import (
 	"github.com/ultraderek/gg"
 )
 
-func main() {
+func crisp(filename string) {
 	const W = 1000
 	const H = 1000
 	const Minor = 10
@@ -40,5 +41,6 @@ func main() {
 	dc.SetRGBA(0, 0, 0, 0.5)
 	dc.Stroke()
 
-	dc.SavePNG("out.png")
+	dc.SavePNG(filename)
 }
+*/

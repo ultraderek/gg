@@ -3,13 +3,14 @@
 
 package main
 
+/*
 import (
 	"image/color"
 
 	"github.com/ultraderek/gg"
 )
 
-func main() {
+func Gradientconic(filename string) {
 	dc := gg.NewContext(400, 400)
 
 	grad1 := gg.NewConicGradient(200, 200, 0)
@@ -35,5 +36,6 @@ func main() {
 	dc.DrawCircle(200, 200, 150)
 	dc.Fill()
 
-	dc.SavePNG("gradient-conic.png")
+	dc.SavePNG(filename)
 }
+*/

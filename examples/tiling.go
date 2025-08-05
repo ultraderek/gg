@@ -1,8 +1,7 @@
 package main
 
-import "github.com/ultraderek/gg"
-
-func main() {
+/*
+func tiling(filename string) {
 	const NX = 4
 	const NY = 3
 	im, err := gg.LoadPNG("examples/gopher.png")
@@ -17,5 +16,6 @@ func main() {
 			dc.DrawImage(im, x*w, y*h)
 		}
 	}
-	dc.SavePNG("out.png")
+	dc.SavePNG(filename)
 }
+*/

@@ -1,8 +1,9 @@
 package main
 
+/*
 import "github.com/ultraderek/gg"
 
-func main() {
+func rotatedimage(filename string) {
 	const W = 400
 	const H = 500
 	im, err := gg.LoadPNG("examples/gopher.png")
@@ -30,5 +31,6 @@ func main() {
 	dc.StrokePreserve()
 	dc.Clip()
 	dc.DrawImageAnchored(im, 100, 0, 0.0, 0.0)
-	dc.SavePNG("out.png")
+	dc.SavePNG(filename)
 }
+*/

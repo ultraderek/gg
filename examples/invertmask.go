@@ -1,8 +1,9 @@
 package main
 
+/*
 import "github.com/ultraderek/gg"
 
-func main() {
+func invertmask(filename string) {
 	dc := gg.NewContext(1024, 1024)
 	dc.DrawCircle(512, 512, 384)
 	dc.Clip()
@@ -10,5 +11,6 @@ func main() {
 	dc.DrawRectangle(0, 0, 1024, 1024)
 	dc.SetRGB(0, 0, 0)
 	dc.Fill()
-	dc.SavePNG("out.png")
+	dc.SavePNG(filename)
 }
+*/

@@ -1,12 +1,13 @@
 package main
 
+/*
 import (
 	"github.com/golang/freetype/truetype"
 	"github.com/ultraderek/gg"
 	"golang.org/x/image/font/gofont/goregular"
 )
 
-func main() {
+func rotadedtext(filename string) {
 	const S = 400
 	dc := gg.NewContext(S, S)
 	dc.SetRGB(1, 1, 1)
@@ -26,5 +27,6 @@ func main() {
 	dc.DrawRectangle(100, 180, w, h)
 	dc.Stroke()
 	dc.DrawStringAnchored(text, 100, 180, 0.0, 0.0)
-	dc.SavePNG("out.png")
+	dc.SavePNG(filename)
 }
+*/

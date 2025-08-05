@@ -1,12 +1,13 @@
 package main
 
+/*
 import (
 	"log"
 
 	"github.com/ultraderek/gg"
 )
 
-func main() {
+func mask(filename string) {
 	im, err := gg.LoadImage("examples/baboon.png")
 	if err != nil {
 		log.Fatal(err)
@@ -16,5 +17,6 @@ func main() {
 	dc.DrawRoundedRectangle(0, 0, 512, 512, 64)
 	dc.Clip()
 	dc.DrawImage(im, 0, 0)
-	dc.SavePNG("out.png")
+	dc.SavePNG(filename)
 }
+*/

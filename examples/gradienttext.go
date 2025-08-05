@@ -1,17 +1,17 @@
 package main
 
+/*
 import (
 	"image/color"
 
 	"github.com/ultraderek/gg"
 )
 
-const (
-	W = 1024
-	H = 512
-)
-
-func main() {
+func gradienttext(filename string) {
+	const (
+		W = 1024
+		H = 512
+	)
 	dc := gg.NewContext(W, H)
 
 	// draw text
@@ -37,5 +37,6 @@ func main() {
 	dc.DrawRectangle(0, 0, W, H)
 	dc.Fill()
 
-	dc.SavePNG("out.png")
+	dc.SavePNG(filename)
 }
+*/

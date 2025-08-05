@@ -1,5 +1,6 @@
 package main
 
+/*
 import (
 	"math"
 	"math/rand"
@@ -7,20 +8,19 @@ import (
 	"github.com/ultraderek/gg"
 )
 
-type Point struct {
-	X, Y float64
-}
-
-func Polygon(n int) []Point {
-	result := make([]Point, n)
-	for i := 0; i < n; i++ {
-		a := float64(i)*2*math.Pi/float64(n) - math.Pi/2
-		result[i] = Point{math.Cos(a), math.Sin(a)}
+func stars(filename string) {
+	type Point struct {
+		X, Y float64
 	}
-	return result
-}
 
-func main() {
+	Polygon := func(n int) []Point {
+		result := make([]Point, n)
+		for i := 0; i < n; i++ {
+			a := float64(i)*2*math.Pi/float64(n) - math.Pi/2
+			result[i] = Point{math.Cos(a), math.Sin(a)}
+		}
+		return result
+	}
 	const W = 1200
 	const H = 120
 	const S = 100
@@ -47,5 +47,6 @@ func main() {
 		dc.Fill()
 		dc.Pop()
 	}
-	dc.SavePNG("out.png")
+	dc.SavePNG(filename)
 }
+*/

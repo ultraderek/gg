@@ -1,8 +1,9 @@
 package main
 
+/*
 import "github.com/ultraderek/gg"
 
-func main() {
+func cubic(filename string) {
 	const S = 1000
 	dc := gg.NewContext(S, S)
 	dc.SetRGB(1, 1, 1)
@@ -34,5 +35,6 @@ func main() {
 	dc.SetDash(4, 8, 1, 8)
 	dc.Stroke()
 
-	dc.SavePNG("out.png")
+	dc.SavePNG(filename)
 }
+*/

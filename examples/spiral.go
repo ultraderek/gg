@@ -1,12 +1,13 @@
 package main
 
+/*
 import (
 	"math"
 
 	"github.com/ultraderek/gg"
 )
 
-func main() {
+func spiral(filename string) {
 	const S = 1024
 	const N = 2048
 	dc := gg.NewContext(S, S)
@@ -23,5 +24,6 @@ func main() {
 		dc.DrawCircle(x, y, r)
 	}
 	dc.Fill()
-	dc.SavePNG("out.png")
+	dc.SavePNG(filename)
 }
+*/

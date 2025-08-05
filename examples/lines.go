@@ -1,12 +1,13 @@
 package main
 
+/*
 import (
 	"math/rand"
 
 	"github.com/ultraderek/gg"
 )
 
-func main() {
+func linesEX(filename string) {
 	const W = 1024
 	const H = 1024
 	dc := gg.NewContext(W, H)
@@ -27,5 +28,6 @@ func main() {
 		dc.DrawLine(x1, y1, x2, y2)
 		dc.Stroke()
 	}
-	dc.SavePNG("out.png")
+	dc.SavePNG(filename)
 }
+*/

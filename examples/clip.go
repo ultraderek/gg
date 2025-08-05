@@ -1,8 +1,9 @@
 package main
 
+/*
 import "github.com/ultraderek/gg"
 
-func main() {
+func clip(filename string) {
 	dc := gg.NewContext(1000, 1000)
 	dc.DrawCircle(350, 500, 300)
 	dc.Clip()
@@ -11,5 +12,6 @@ func main() {
 	dc.DrawRectangle(0, 0, 1000, 1000)
 	dc.SetRGB(0, 0, 0)
 	dc.Fill()
-	dc.SavePNG("out.png")
+	dc.SavePNG(filename)
 }
+*/

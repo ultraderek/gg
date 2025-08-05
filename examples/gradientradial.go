@@ -1,12 +1,13 @@
 package main
 
+/*
 import (
 	"image/color"
 
 	"github.com/ultraderek/gg"
 )
 
-func main() {
+func gradientradial(filename string) {
 	dc := gg.NewContext(400, 200)
 
 	grad := gg.NewRadialGradient(100, 100, 10, 100, 120, 80)
@@ -23,5 +24,6 @@ func main() {
 	dc.DrawCircle(100, 120, 80)
 	dc.Stroke()
 
-	dc.SavePNG("out.png")
+	dc.SavePNG(filename)
 }
+*/
